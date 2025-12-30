@@ -1,0 +1,28 @@
+---
+import ProjectLinkButton from './projectLinkButton.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  aUrl: string;
+  link: string;
+}
+
+const { title, description, aUrl,link } = Astro.props;
+---
+
+<div class="border-2 font-mono shadow-sm/50 border-bluu px-5 py-4 mt-5 rounded-2xl group hover:bg-bluu transition duration-200 hover:text-white hover:brightness-105 flex flex-col justify-between">
+  <div>
+    <p class="text-xl">{title}</p>
+  <p class="text-md my-5 text-bluu group-hover:text-white group-hover:brightness-105 group-hover:transition duration-200 ">{description}</p>
+  </div>
+  <div class="justify-self-end">
+
+  <slot name="icon" />
+  
+  <div class="border-2 border-b-gray-300 border-greyish rounded-2xl inset-shadow-secondary p-0.5 m-1"></div>
+  <a href={aUrl}>
+    <ProjectLinkButton>{link}</ProjectLinkButton>
+  </a>
+  </div>
+</div>

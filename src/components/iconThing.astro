@@ -1,0 +1,9 @@
+---
+import "../styles/global.css"
+const {href, title, ...rest}= Astro.props
+
+---
+
+<button class=" px-4 py-2 border-2 border-greyish p-5 inset-shadow-sm inset-shadow-gray-900/50 rounded-xl bg-greyish">
+    <div><slot></slot></div>
+</button>

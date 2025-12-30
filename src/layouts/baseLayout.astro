@@ -1,0 +1,23 @@
+---
+import Footer from '../components/footer.astro'
+import Navbar from '../components/navbar.astro'
+import '../styles/global.css'
+const {title} = Astro.props
+---
+
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>{title} - Nicole Chuah</title>
+    </head>
+    <body class = " mx-auto flex flex-col min-h-screen ">
+        <Navbar/>
+        <main class = "grow px-5 mt-30">
+            <slot></slot>
+        </main>
+        <Footer/>
+    </body>
+</html>

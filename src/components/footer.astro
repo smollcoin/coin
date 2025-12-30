@@ -1,0 +1,98 @@
+---
+import "../styles/global.css";
+const props = Astro.props;
+---
+
+<footer
+  class="border-t-borderHighlight border-2 border-borderShadow inset-shadow-sm"
+>
+  <div class="bg-greyish flex justify-between h-32 ">
+    <div
+      class="flex flex-col justify-start px-6 py-5 gap-4 text-primary font-mono"
+    >
+      <p class="text-xl">Nicole Chuah • 2026</p>
+      <div class="flex items-center gap-2">
+        <span>Made with </span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 32 32"
+          {...props}
+          ><!-- Icon from Material Icon Theme by Material Extensions - https://github.com/material-extensions/vscode-material-icon-theme/blob/main/LICENSE -->
+          <path
+            fill="#7c4dff"
+            d="M12.106 25.849c-1.262-1.156-1.63-3.586-1.105-5.346a5.18 5.18 0 0 0 3.484 1.66a9.68 9.68 0 0 0 5.882-.734c.215-.106.413-.247.648-.39a3.5 3.5 0 0 1 .16 1.555a4.26 4.26 0 0 1-1.798 3.021c-.404.3-.832.569-1.25.852a2.613 2.613 0 0 0-1.15 3.372l.048.161a3.4 3.4 0 0 1-1.5-1.285a3.6 3.6 0 0 1-.578-1.962a9 9 0 0 0-.05-1.037c-.114-.831-.504-1.204-1.238-1.225a1.45 1.45 0 0 0-1.507 1.18c-.012.056-.028.112-.046.178M4.901 20a17.75 17.75 0 0 1 7.4-2l2.913-8.38a.765.765 0 0 1 1.527 0L19.7 18a14.24 14.24 0 0 1 7.399 2S20.704 2.877 20.692 2.842C20.51 2.33 20.202 2 19.787 2h-7.619c-.415 0-.71.33-.904.842z"
+          ></path></svg
+        >
+        <span>,</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          viewBox="0 0 128 128"
+          {...props}
+          ><!-- Icon from Devicon by konpa - https://github.com/devicons/devicon/blob/master/LICENSE -->
+          <path
+            fill="#38bdf8"
+            d="M64.004 25.602c-17.067 0-27.73 8.53-32 25.597c6.398-8.531 13.867-11.73 22.398-9.597c4.871 1.214 8.352 4.746 12.207 8.66C72.883 56.629 80.145 64 96.004 64c17.066 0 27.73-8.531 32-25.602q-9.6 12.803-22.399 9.602c-4.87-1.215-8.347-4.746-12.207-8.66c-6.27-6.367-13.53-13.738-29.394-13.738M32.004 64c-17.066 0-27.73 8.531-32 25.602Q9.603 76.799 22.402 80c4.871 1.215 8.352 4.746 12.207 8.66c6.274 6.367 13.536 13.738 29.395 13.738c17.066 0 27.73-8.53 32-25.597q-9.6 12.797-22.399 9.597c-4.87-1.214-8.347-4.746-12.207-8.66C55.128 71.371 47.868 64 32.004 64m0 0"
+          ></path></svg>
+          & <img src="../../files/cute.gif" alt="a cute gif" class = "h-5 mt-1">
+        
+      </div>
+      
+    </div>
+    <div
+      class="flex flex-col justify-between px-6 py-5 text-white font-medium mr-10">
+      <div class="flex items-center gap-4">
+        <a href="mailto:nicole.chuahxl@gmail.com">
+          <svg
+            class="mt-1 text-black hover:text-red-600 transition duration-150"
+            xmlns="http://www.w3.org/2000/svg"
+            width="1.5em"
+            height="1.5em"
+            viewBox="0 0 24 24"
+            {...props}
+          >
+            <path
+              fill="currentColor"
+              d="M17 21v-3h-3v-2h3v-3h2v3h3v2h-3v3ZM4 18q-.825 0-1.412-.587Q2 16.825 2 16V6q0-.825.588-1.412Q3.175 4 4 4h13q.825 0 1.413.588Q19 5.175 19 6v5.075q-.25-.05-.487-.063Q18.275 11 18 11t-.512.012q-.238.013-.488.063V7.4L10.4 12L4 7.425V16h8.075q-.05.25-.063.488Q12 16.725 12 17t.012.512q.013.238.063.488ZM5.45 6l4.95 3.55L15.5 6Z"
+            ></path>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/nicole-chuah/">
+          <svg
+            class="text-black hover:text-blue-900 transition duration-150"
+            xmlns="http://www.w3.org/2000/svg"
+            width="1.3em"
+            height="1.3em"
+            viewBox="0 0 24 24"
+            {...props}
+            ><!-- Icon from Akar Icons by Arturo Wibawa - https://github.com/artcoholic/akar-icons/blob/master/LICENSE -->
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02c3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461c-1.889 0-2.674 1.345-2.674 3.46V22h-4zM2.57 21.83h4V8.799h-4zM7.143 4.55a2.53 2.53 0 0 1-.753 1.802a2.57 2.57 0 0 1-1.82.748a2.6 2.6 0 0 1-1.818-.747A2.55 2.55 0 0 1 2 4.55c0-.677.27-1.325.753-1.803A2.58 2.58 0 0 1 4.571 2c.682 0 1.336.269 1.819.747s.753 1.126.753 1.803"
+              clip-rule="evenodd"></path></svg
+          >
+        </a>
+        <a href="discord.com/users/622377162212769805">
+          <svg
+          class="text-black hover:text-indigo-600 transition duration-150 mt-1"
+            xmlns="http://www.w3.org/2000/svg"
+            width="1.4em"
+            height="1.4em"
+            viewBox="0 0 24 24"
+            {...props}
+            ><!-- Icon from Google Material Icons by Material Design Authors - https://github.com/material-icons/material-icons/blob/master/LICENSE -->
+            <path
+              fill="currentColor"
+              d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.1.1 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.1 16.1 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12"
+            ></path></svg
+          >
+        </a>
+      </div>
+        <img src="../../files/created_by_human_badge.png" alt="" class = "w-30 ">
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Lexend", sans-serif; 
+  --color-primary: #2d3436;
+  --color-secondary: #4a5568;
+  --color-bluu: #3a69cf;
+  --color-greyish: #e0e5ec;
+  --color-borderShadow:#babecc;
+  --color-borderDeep: #a3b1c6;
+
+  
+
+}
+
+@layer base{
+    body{
+        @apply bg-greyish;
+        @apply text-primary
+    }
+    text-shadow{
+      @apply drop-shadow-[0_1px_0_#ffffff]
+    }
+    
+}
+
+

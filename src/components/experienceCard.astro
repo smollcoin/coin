@@ -1,0 +1,17 @@
+---
+const { title, items } = Astro.props;
+---
+
+<div class="border-2 font-mono shadow-sm/50 border-gray-200 px-5 my-2.5 hover:border-white hover:border-2">
+  <div class="px-5 py-2.5">
+    <div class="text-xl">{title}</div>
+    <ul class="list-disc pt-1 pl-5">
+      {items.map((item: { text: string; date: string; }) => (
+        <li>
+          {item.text}
+          {item.date && <p class="text-sm mb-2">({item.date})</p>}
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
