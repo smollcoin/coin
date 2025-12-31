@@ -1,0 +1,14 @@
+---
+import "../../styles/global.css"
+const {href, title, isActive = false, ...rest}= Astro.props
+
+const currentPath = Astro.url.pathname;
+const isCurrentPage = href ===currentPath;
+const shouldBeActive = isActive || isCurrentPage
+---
+
+<button class={`rounded-md px-4 py-2 bg-gray-50 text-primary font-bold font-mono shadow-[6px_6px_12px_#babecc,_-6px_-6px_12px_#ffffff] hover:translate-y-[2px] transition duration-150 ${shouldBeActive ? 'shadow-[inset_6px_6px_12px_#babecc,_inset_-6px_-6px_12px_#ffffff]' : ''}`}>
+    <div><slot></slot></div>
+</button>
+
+

@@ -1,0 +1,66 @@
+---
+import BaseLayout from "../layouts/baseLayout.astro";
+import MusicDetails from "../components/musicDetails.astro";
+import Tab from "../components/tabs/tab.astro";
+const props = Astro.props
+
+---
+
+<BaseLayout title="More">
+  <div class="font-mono">
+    <section>
+        <div class="marquee text-white bg-bluu mb-5">
+            <div  ><span>TMI</span><span>TMI</span><span>TMI</span><span>TMI</span><span>TMI</span><span>TMI</span>
+            <span>TMI</span><span>TMI</span><span>TMI</span><span>TMI</span><span>TMI</span><span>TMI</span></div>
+        </div>
+          <div class="flex w-full justify-between">
+        {
+          Array.from({ length: 10 }).map(() => (
+            <img
+              src="../../files/cute.gif"
+              alt="a cute gif"
+              class="h-5 shrink-0"
+            />
+          ))
+        }
+      </div>
+      <div
+        class="border-2 border-greyish p-5 inset-shadow-sm inset-shadow-gray-900/50 rounded-2xl bg-greyish"
+      >
+      
+        <div class="text-3xl">Hello, I am</div>
+        <div class="pt-5 text-5xl text-bluu">Nicole </div>
+        <div class="text-3xl">A Tetris T-spinner<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" class = "text-fuchsia-500 animate-spin" ><!-- Icon from Arcticons by Donnnno - https://creativecommons.org/licenses/by-sa/4.0/ --><path fill="currentColor" stroke="black" stroke-linecap="round" stroke-linejoin="round" d="M4.5 37V24h13v13zm13 0V24h13v13zm0-13V11h13v13zm13 13V24h13v13z"/></svg></div>
+        <ul class="text-md mt-10 text-bluu">
+          <li>Polyjamorous music listener</li>
+          <li>Very heavy sleeper</li>
+          <li>Occasional FL user</li>
+          <li>Washed Violinist</li>
+          <li>Washed Basketball Player</li>
+          <li>Paradoxical Life wanderer</li>
+          
+        </ul>
+      </div>
+       <div class="flex w-full justify-between">
+        {
+          Array.from({ length: 10 }).map(() => (
+            <img
+              src="../../files/cute.gif"
+              alt="a cute gif"
+              class="h-5 shrink-0"
+            />
+          ))
+        }
+      </div>
+    </section>
+    <section>
+
+      <div id="Contact" class="border-2 border-greyish p-10 inset-shadow-sm inset-shadow-gray-900/50 rounded-2xl bg-bluu text-center text-greyish my-10 ">
+        <p class="font-extrabold text-4xl text-shadow-2xs">To be continued...</p>
+      
+      </div>
+
+
+    </section>
+  </div>
+</BaseLayout>

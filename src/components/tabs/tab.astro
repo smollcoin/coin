@@ -1,0 +1,13 @@
+---
+interface Props {
+  imgFile: string;
+  label?: string;
+  isActive?:boolean
+}
+
+const { imgFile, label, isActive = false } = Astro.props;
+---
+<div class={`border-2 font-mono shadow-sm/50 border-greyish px-5 py-4 rounded-2xl w-32 h-32 m-1",${isActive? "border-bluu" :""} `}>
+<img src={imgFile} alt={label}>
+  
+</div>
