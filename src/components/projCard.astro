@@ -20,7 +20,7 @@ const { title, description, aUrl,link } = Astro.props;
 
   <slot name="icon" />
   
-  <div class="border-2 border-b-gray-300 border-greyish rounded-2xl inset-shadow-secondary p-0.5 m-1"></div>
+  <div class="border-2 border-b-gray-300 border-greyish rounded-2xl inset-shadow-secondary p-0.5 m-1 text-left"></div>
   <a href={aUrl} target="_blank">
     <ProjectLinkButton>{link}</ProjectLinkButton>
   </a>
