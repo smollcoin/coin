@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import created_by_human_badge from "../images/created_by_human_badge.png"
 const props = Astro.props;
 ---
 
@@ -92,7 +93,7 @@ const props = Astro.props;
           >
         </a>
       </div>
-        <img src="../../public/created_by_human_badge.png" alt="" class = "w-30 ">
+        <img src={created_by_human_badge.src} alt="" class = "w-30 ">
     </div>
   </div>
 </footer>
